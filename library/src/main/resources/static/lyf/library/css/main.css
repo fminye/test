@@ -8,11 +8,13 @@
 
 .item img {
 	display: inline;
-	height: 50px;
+	height: 60px;
 }
 
 .item .name {
 	display: inline;
+	width:800px;
+	text-size:24px;
 }
 
 .item .buttons {
