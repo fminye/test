@@ -26,7 +26,7 @@ public class LibraryServiceImpl implements LibraryService {
 		// Pageable表示分页条件，PageRequest用于创建分页条件。
 		// 第一个参数表示页面，从0开始！
 		// 第二个参数表示每页查询多少条数据出来。
-		Pageable pageable = PageRequest.of(pageNumber, 3);
+		Pageable pageable = PageRequest.of(pageNumber, 10);
 
 		Page<Book> page;
 		if (StringUtils.isEmpty(keyword)) {
