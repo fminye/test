@@ -84,13 +84,12 @@ public class TokenManager {
 	// 获取远程令牌
 	public AccessToken getRemoteToken() {
 		// 在微信的公众号没有认证通过之前，先使用开发者工具里面的测试号来进行测试
-				String appId = "wx2ce764b74ca2d1a3";
-				String appSecret = "23aa4f6c3afca083a6fb79a6fe0ffc4f";
-				String url = "https://api.weixin.qq.com/cgi-bin/token"//
-						+ "?grant_type=client_credential"//
-						+ "&appid=" + appId//
-						+ "&secret=" + appSecret;
-
+		String appId = "wx2ce764b74ca2d1a3";
+		String appSecret = "23aa4f6c3afca083a6fb79a6fe0ffc4f";
+		String url = "https://api.weixin.qq.com/cgi-bin/token"//
+				+ "?grant_type=client_credential"//
+				+ "&appid=" + appId//
+				+ "&secret=" + appSecret;
 
 		// 1.创建HttpClient对象
 		// 在Java 11才内置了HttpClient，如果是早期JDK需要使用第三方的jar文件
